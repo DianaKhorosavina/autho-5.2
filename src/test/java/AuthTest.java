@@ -19,7 +19,7 @@ public class AuthTest {
     @Test
     @DisplayName("Success login")
     void shouldSuccessLogin(){
-        var registeredUser = DataGenerator.Registration.getRegisteredUser ("active");
+        var registeredUser = DataGenerator.Registration.getRegisteredUser("active");
         $("[data-test-id='login'] input").setValue(registeredUser.getLogin());
         $("[data-test-id='password'] input").setValue(registeredUser.getPassword());
         $("button-button").click();
@@ -65,8 +65,6 @@ public class AuthTest {
                 .shouldHave(Condition.text("Ошибка! Неверно указан логин или пароль"), Duration.ofSeconds(10))
                 .shouldBe((Condition.visible));
     }
-
-
 
 
 }
