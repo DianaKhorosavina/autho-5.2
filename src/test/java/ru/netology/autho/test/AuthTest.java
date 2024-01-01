@@ -1,8 +1,10 @@
+package ru.netology.autho.test;
 
 import com.codeborne.selenide.Condition;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import ru.netology.autho.data.DataGenerator;
 
 import java.time.Duration;
 
